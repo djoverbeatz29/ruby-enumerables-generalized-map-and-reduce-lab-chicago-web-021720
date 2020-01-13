@@ -8,12 +8,11 @@ def map(array)
 end
 
 def reduce(array, sv = nil)
-  result = []
   if sv
-    result.push(sv)
+    result = sv
   else
-    result.push(array.pop)
+    sum = array.pop
   end
   
   for ho in array do
-    yield()
+    sum = yield(sum, ho)
