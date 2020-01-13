@@ -9,7 +9,6 @@ end
 
 def reduce(array, sv = nil)
   result = (sv)? sv : array[0]
-  
   for i in ((sv)? 0 : 1)...array.length do
     result = yield(result, array[i])
   end
