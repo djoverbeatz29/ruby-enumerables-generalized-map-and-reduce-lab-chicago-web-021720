@@ -8,15 +8,10 @@ def map(array)
 end
 
 def reduce(array, sv = nil)
+  result = (sv)? sv : array[0]
   
-  if sv
-    result = sv
-  else
-    sum = array[0]
+  for i in ((sv)? 0 : 1)...array.length do
+    result = yield(result, array[i])
   end
-  
-  for i in ()...array.length do
-    sum = yield(sum, array[i])
-  end
-  sum
+  result
 end
