@@ -16,3 +16,4 @@ def reduce(array, sv = nil)
   end
   
   for ho in array do
+    yield()
