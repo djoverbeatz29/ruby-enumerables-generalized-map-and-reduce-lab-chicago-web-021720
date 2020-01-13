@@ -11,11 +11,11 @@ def reduce(array, sv = nil)
   if sv
     result = sv
   else
-    sum = array.pop
+    sum = array[0]
   end
   
-  for ho in array do
-    sum = yield(sum, ho)
+  for i in !!sv...array.length do
+    sum = yield(sum, array[i])
   end
   sum
 end
