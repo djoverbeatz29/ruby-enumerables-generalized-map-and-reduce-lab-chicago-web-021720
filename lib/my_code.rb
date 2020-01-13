@@ -8,13 +8,14 @@ def map(array)
 end
 
 def reduce(array, sv = nil)
+  
   if sv
     result = sv
   else
     sum = array[0]
   end
   
-  for i in !!sv...array.length do
+  for i in ()...array.length do
     sum = yield(sum, array[i])
   end
   sum
