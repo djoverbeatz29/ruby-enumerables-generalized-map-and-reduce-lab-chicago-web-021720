@@ -12,4 +12,4 @@ def reduce(array, sv = nil)
   if sv
     result.push(sv)
   else
-    result.push(array.)
+    result.push(array.pop())
