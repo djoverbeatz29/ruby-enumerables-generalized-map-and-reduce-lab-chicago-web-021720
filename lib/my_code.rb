@@ -6,6 +6,3 @@ def map(array)
   end
   result
 end
-
-a = [1, 2, 3, -4]
-puts map(a){ |n| n * n}
