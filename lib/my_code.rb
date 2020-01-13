@@ -16,3 +16,6 @@ def reduce(array, sv = nil)
   
   for ho in array do
     sum = yield(sum, ho)
+  end
+  sum
+end
