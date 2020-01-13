@@ -1,8 +1,12 @@
 # Your Code Here
-def mappa(array)
-  yield(array)
+def map(array)
+  result = []
+  for ho in array do
+    result.push(yield(ho))
+  end
+  
 end
 
 a = [1, 2, 3, -4]
-mappa(a){ |n|
+map(a){ |n|
   n * n}
