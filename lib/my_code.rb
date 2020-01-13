@@ -7,5 +7,9 @@ def map(array)
   result
 end
 
-def reduce(array)
-  result = 
+def reduce(array, sv = nil)
+  result = []
+  if sv
+    result.push(sv)
+  else
+    result.push(array.)
